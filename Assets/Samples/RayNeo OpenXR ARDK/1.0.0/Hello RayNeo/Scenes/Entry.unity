@@ -737,7 +737,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8138\u90E8\u8BC6\u522B\nFace Recognition"
+  m_Text: 'Little Max Influence
+
+    Face Recognition'
 --- !u!222 &500834220
 CanvasRenderer:
   m_ObjectHideFlags: 0
