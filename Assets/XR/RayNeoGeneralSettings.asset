@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b539bc9bf7e1ae43a0d6726db6cba61, type: 3}
+  m_Name: RayNeoGeneralSettings
+  m_EditorClassIdentifier: 
+  touchConfigs:
+  - PlatformType: 32
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 33
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 34
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 35
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 36
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 48
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: 4096
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  - PlatformType: -1
+    MulitTapSpacing: 0.4
+    MovingThreshold: 10
+    SwipeEndThreshold: 100
+    ReleaseSimpleTapImmediately: 0
+    ReleaseLastTapOnChangeToMove: 1
+  baseConfig:
+    LogLevel: 4
+    SleepTimeOut: -1
+    ErrorWindow: 1
+  m_devices:
+  - DeviceName: NextViewPro
+    type: 32
+    Width: 1920
+    Height: 1080
+    FOV: 21.599998
+  - DeviceName: Air Plus
+    type: 33
+    Width: 1920
+    Height: 1080
+    FOV: 21.599998
+  - DeviceName: Air Plus(Seeya)
+    type: 34
+    Width: 1920
+    Height: 1080
+    FOV: 21.599998
+  - DeviceName: Air Plus(Sony)
+    type: 35
+    Width: 1920
+    Height: 1080
+    FOV: 21.599998
+  - DeviceName: Air Plus 1.8
+    type: 36
+    Width: 1920
+    Height: 1080
+    FOV: 23.8
+  - DeviceName: Air Plus 2
+    type: 48
+    Width: 1920
+    Height: 1080
+    FOV: 22.4
+  - DeviceName: X2
+    type: 4096
+    Width: 640
+    Height: 480
+    FOV: 16.67944

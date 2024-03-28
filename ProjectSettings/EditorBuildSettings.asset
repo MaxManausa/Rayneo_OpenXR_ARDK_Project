@@ -4,5 +4,37 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Entry.unity
+    guid: 1416ff5b23a64244d8db63f55acbe254
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/FacialRecog.unity
+    guid: 36f5ccd766cbe404c9e859285ea8ce1c
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/PlaneDetection.unity
+    guid: 1ec5c02b7757a6c46a7ce08d5f40370c
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/SensorTrans.unity
+    guid: 4c29139299079414694bec03e0df4280
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/Slam.unity
+    guid: d213d639c358d2542af0db24b9224458
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/BaseInteraction.unity
+    guid: ec87d86086a440244a25ccbc3f76a24c
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/CustomRayPoint.unity
+    guid: 623d4e8a4aace9e4fa86882024dcff63
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/GazeActive.unity
+    guid: 351d33eda847ca141b0d32c17552a433
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/IPC.unity
+    guid: f86084c46e769a14f98128aac41f02ed
+  - enabled: 1
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/Lattice.unity
+    guid: 62b1d7fbb06d7c346baf7a5add95f7be
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0db4e53b5281ac6478ed27e3d6050f86, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 604758a10068001438998e318258fa09, type: 2}
