@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/SensorTrans.unity
     guid: 4c29139299079414694bec03e0df4280
   - enabled: 1
-    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/Slam.unity
+    path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Algorithm/MaxSlam.unity
     guid: d213d639c358d2542af0db24b9224458
   - enabled: 1
     path: Assets/Samples/RayNeo OpenXR ARDK/1.0.0/Hello RayNeo/Scenes/Interactive/BaseInteraction.unity
