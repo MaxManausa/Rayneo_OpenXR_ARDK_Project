@@ -4,6 +4,7 @@ using UnityEngine;
 public class MaxSlamCtrl : MonoBehaviour
 {
     public GameObject m_Cube;
+    public GameObject m_Sphere;
     public int m_LineCount = 10;
     public float m_CubeSpace = 0.3f;
     // Start is called before the first frame update
@@ -11,6 +12,7 @@ public class MaxSlamCtrl : MonoBehaviour
     {
         Algorithm.EnableSlamHeadTracker();
         CreateCubes();
+        OnEnable6Dof();
     }
 
 
@@ -32,6 +34,11 @@ public class MaxSlamCtrl : MonoBehaviour
 
             }
         }
+    }
+
+    private void OnEnable6Dof()
+    {
+        m_Sphere.SetActive(true);
     }
 
     // Update is called once per frame

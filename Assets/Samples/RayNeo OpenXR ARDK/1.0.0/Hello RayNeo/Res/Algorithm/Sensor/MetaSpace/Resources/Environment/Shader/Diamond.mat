@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Diamond
   m_Shader: {fileID: 4800000, guid: e7ec662fe3bfaab4e960bdd55c783b3a, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,14 +32,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _FresnelIndex: 4.69
-    - _ReflectionIndex: 2.07
+    - _ReflectionIndex: 4.42
     - _RefractionIndex: 3.25
-    - _RimBias: 0.1
-    - _RimPower: 10
+    - _RimBias: 0.206
+    - _RimPower: 7.12
     - _RimScale: 10
     m_Colors:
-    - _ColorOverlay: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 0}
-    - _RimColor: {r: 1, g: 0.8871069, b: 0.3915094, a: 0}
+    - _ColorOverlay: {r: 0.7824837, g: 0.35471702, b: 1, a: 0}
+    - _RimColor: {r: 0.5377358, g: 0.5231191, b: 0.45961192, a: 0}
   m_BuildTextureStacks: []
