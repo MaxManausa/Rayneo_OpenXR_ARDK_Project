@@ -12,9 +12,11 @@ public class Scene2Ctrl : MonoBehaviour
     public LatticeButton m_level2DefaultSelectBtn;
     public GameObject m_level2Obj;
 
-    public LatticeButton m_deleteLevel1Btn;
+    //public LatticeButton m_deleteLevel1Btn;
     public LatticeButton m_deleteLevel2Btn;
 
+    [SerializeField] private GameObject coverArt;
+    [SerializeField] private GameObject aboutPage;
 
 
     public void OnDoubleTapCallBack()
@@ -29,11 +31,13 @@ public class Scene2Ctrl : MonoBehaviour
         LatticeBrain.Brain.OnDoubleTap += OnDoubleTapCallBack;
         m_defaultSelectBtn.onClick.AddListener(OnClick);
         m_level2DefaultSelectBtn.onClick.AddListener(CloseLevel2);
-        m_deleteLevel1Btn.onClick.AddListener(DeleteLevel1);
+        //m_deleteLevel1Btn.onClick.AddListener(DeleteLevel1);
         m_deleteLevel2Btn.onClick.AddListener(DeleteLevel2);
         m_6DofBtn.onClick.AddListener(To6DOFScene);
         m_AboutButton.onClick.AddListener(AboutLevel);
         m_CloseButton.onClick.AddListener(CloseApp);
+        coverArt.SetActive(true);
+        aboutPage.SetActive(false);
     }
 
     private void To6DOFScene()
@@ -44,7 +48,18 @@ public class Scene2Ctrl : MonoBehaviour
 
     private void AboutLevel()
     {
-        //ah yeah son
+        if (coverArt.activeSelf) 
+        { 
+            coverArt.SetActive(false);
+            aboutPage.SetActive(true);
+            return;
+        }
+        else
+        {
+            coverArt.SetActive(true);
+            aboutPage.SetActive(false);
+            return;
+        }
     }
 
     public void CloseApp()
@@ -54,7 +69,7 @@ public class Scene2Ctrl : MonoBehaviour
 
     private void DeleteLevel1()
     {
-        LatticeBrain.RemoveButton(m_deleteLevel1Btn);
+        //LatticeBrain.RemoveButton(m_deleteLevel1Btn);
     }
 
     private void DeleteLevel2()

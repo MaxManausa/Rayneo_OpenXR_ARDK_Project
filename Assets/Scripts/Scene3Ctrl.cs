@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class Scene3Ctrl : MonoBehaviour
 {
     public GameObject menuText;
-    
+    public GameObject objectCounterText;
+
     public LatticeButton button1;
     public LatticeButton button2;
     public LatticeButton button3;
@@ -35,16 +36,16 @@ public class Scene3Ctrl : MonoBehaviour
     void Start()
     {
         LatticeBrain.FocusLevel(button2.level);
-        LatticeBrain.SelectButton(button2);
+        //LatticeBrain.SelectButton(button2);
         LatticeBrain.Brain.OnDoubleTap += OnDoubleTapCallBack;
         button2.onClick.AddListener(Next);
-        m_level2DefaultSelectBtn.onClick.AddListener(CloseLevel2);
-        m_deleteLevel1Btn.onClick.AddListener(DeleteLevel1);
-        m_deleteLevel2Btn.onClick.AddListener(DeleteLevel2);
+        //m_level2DefaultSelectBtn.onClick.AddListener(CloseLevel2);
+        //m_deleteLevel1Btn.onClick.AddListener(DeleteLevel1);
+        //m_deleteLevel2Btn.onClick.AddListener(DeleteLevel2);
         button4.onClick.AddListener(ToMaxLattice);
         button3.onClick.AddListener(Previous);
         button5.onClick.AddListener(HideMenu);
-        button1.onClick.AddListener(ResetTheView);
+        //button1.onClick.AddListener(ResetTheView);
         hideMenuEnabled = false;
     }
 
@@ -69,6 +70,7 @@ public class Scene3Ctrl : MonoBehaviour
             button2.gameObject.SetActive(false);
             //button1.gameObject.SetActive(false);
             menuText.SetActive(false);
+            objectCounterText.SetActive(false);
             hideMenuEnabled = true;
             button5.GetComponentInChildren<Text>().text = "Show Menu";
         }
@@ -79,6 +81,7 @@ public class Scene3Ctrl : MonoBehaviour
             button2.gameObject.SetActive(true);
             //button1.gameObject.SetActive(true);
             menuText.SetActive(true);
+            objectCounterText.SetActive(true);
             hideMenuEnabled = false;
             button5.GetComponentInChildren<Text>().text = "Hide Menu";
         }
