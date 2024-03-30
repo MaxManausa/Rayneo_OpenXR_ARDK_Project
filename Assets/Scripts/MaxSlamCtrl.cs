@@ -12,8 +12,8 @@ public class MaxSlamCtrl : MonoBehaviour
     void Start()
     {
         Algorithm.EnableSlamHeadTracker();
-        CreateCubes();
-        OnEnable6Dof();
+        //CreateCubes();
+       // OnEnable6Dof();
     }
 
 

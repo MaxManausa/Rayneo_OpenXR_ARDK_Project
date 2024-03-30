@@ -7,10 +7,15 @@ using UnityEngine.UI;
 public class Scene3Ctrl : MonoBehaviour
 {
     public GameObject menuText;
-    public LatticeButton m_mainMenuButton;
-    public LatticeButton m_defaultSelectBtn;
-    public LatticeButton m_AboutButton;
-    public LatticeButton m_hideMenuButton;
+    
+    public LatticeButton button1;
+    public LatticeButton button2;
+    public LatticeButton button3;
+    public LatticeButton button4;
+    public LatticeButton button5;
+
+    [SerializeField] private CycleChildren cycleChildren;
+    [SerializeField] private ResetViewScript resetViewScript;
 
     public LatticeButton m_level2DefaultSelectBtn;
     public GameObject m_level2Obj;
@@ -29,16 +34,17 @@ public class Scene3Ctrl : MonoBehaviour
 
     void Start()
     {
-        LatticeBrain.FocusLevel(m_defaultSelectBtn.level);
-        LatticeBrain.SelectButton(m_defaultSelectBtn);
+        LatticeBrain.FocusLevel(button2.level);
+        LatticeBrain.SelectButton(button2);
         LatticeBrain.Brain.OnDoubleTap += OnDoubleTapCallBack;
-        m_defaultSelectBtn.onClick.AddListener(OnClick);
+        button2.onClick.AddListener(Next);
         m_level2DefaultSelectBtn.onClick.AddListener(CloseLevel2);
         m_deleteLevel1Btn.onClick.AddListener(DeleteLevel1);
         m_deleteLevel2Btn.onClick.AddListener(DeleteLevel2);
-        m_mainMenuButton.onClick.AddListener(ToMaxLattice);
-        m_AboutButton.onClick.AddListener(AboutLevel);
-        m_hideMenuButton.onClick.AddListener(HideMenu);
+        button4.onClick.AddListener(ToMaxLattice);
+        button3.onClick.AddListener(Previous);
+        button5.onClick.AddListener(HideMenu);
+        button1.onClick.AddListener(ResetTheView);
         hideMenuEnabled = false;
     }
 
@@ -58,26 +64,41 @@ public class Scene3Ctrl : MonoBehaviour
         if (!hideMenuEnabled)
         {
             // Assuming LatticeButton has a gameObject property or is a MonoBehaviour
-            m_mainMenuButton.gameObject.SetActive(false);
-            m_AboutButton.gameObject.SetActive(false);
-            m_defaultSelectBtn.gameObject.SetActive(false);
+            button4.gameObject.SetActive(false);
+            button3.gameObject.SetActive(false);
+            button2.gameObject.SetActive(false);
+            //button1.gameObject.SetActive(false);
             menuText.SetActive(false);
             hideMenuEnabled = true;
-            m_hideMenuButton.GetComponentInChildren<Text>().text = "Show Menu";
+            button5.GetComponentInChildren<Text>().text = "Show Menu";
         }
         else
         {
-            m_mainMenuButton.gameObject.SetActive(true);
-            m_AboutButton.gameObject.SetActive(true);
-            m_defaultSelectBtn.gameObject.SetActive(true);
+            button4.gameObject.SetActive(true);
+            button3.gameObject.SetActive(true);
+            button2.gameObject.SetActive(true);
+            //button1.gameObject.SetActive(true);
             menuText.SetActive(true);
             hideMenuEnabled = false;
-            m_hideMenuButton.GetComponentInChildren<Text>().text = "Hide Menu";
+            button5.GetComponentInChildren<Text>().text = "Hide Menu";
         }
 
     }
 
+    public void ResetTheView()
+    {
+        resetViewScript.ResetView();
+    }
 
+    public void Next()
+    {
+        cycleChildren.ActivateNextChild();
+    }
+
+    public void Previous()
+    {
+        cycleChildren.ActivatePreviousChild();
+    }
     
     private void DeleteLevel1()
     {
@@ -94,7 +115,7 @@ public class Scene3Ctrl : MonoBehaviour
     {
         m_level2Obj.SetActive(false);
         LatticeBrain.MovingChangeItem = false;
-        LatticeBrain.FocusLevel(m_defaultSelectBtn.level);
+        LatticeBrain.FocusLevel(button2.level);
     }
 
     
