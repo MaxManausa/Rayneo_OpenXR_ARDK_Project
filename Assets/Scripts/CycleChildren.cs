@@ -61,7 +61,7 @@ public class CycleChildren : MonoBehaviour
     {
         if (artworkText != null)
         {
-            artworkText.text = "Artwork Piece: " + artworkNumber;
+            artworkText.text = "Artwork Piece: " + artworkNumber + "/43";
         }
         else
         {
