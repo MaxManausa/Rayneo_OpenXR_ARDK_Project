@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MaxLattice.unity
     guid: 9564756067e9dbf4db9ee8192911de51
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MaxSlam.unity
     guid: d213d639c358d2542af0db24b9224458
+  - enabled: 1
+    path: Assets/Scenes/WhaleLattice.unity
+    guid: 318ce7c10fa10a643953d86bc236d471
+  - enabled: 1
+    path: Assets/Scenes/WhaleSlam.unity
+    guid: d760846966aec8e46800bcdd7b2fb812
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0db4e53b5281ac6478ed27e3d6050f86, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 604758a10068001438998e318258fa09, type: 2}
