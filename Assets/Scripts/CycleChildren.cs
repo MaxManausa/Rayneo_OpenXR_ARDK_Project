@@ -61,7 +61,7 @@ public class CycleChildren : MonoBehaviour
     {
         if (artworkText != null)
         {
-            artworkText.text = "Artwork Piece: " + artworkNumber + "/" + transform.childCount;
+            artworkText.text = "Art Piece: " + artworkNumber + "/" + transform.childCount;
         }
         else
         {
