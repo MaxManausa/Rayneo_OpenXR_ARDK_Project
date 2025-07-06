@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 22dc785c1bdd83f4abc47c99629605db
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _DisplacementMask: {fileID: 2800000, guid: 0fc8bf4d13e7b2c44872d87a42008190, type: 3}
+  - _FrontFace_Diffuse_map: {fileID: 2800000, guid: d8cfe409d2fb65842a7151f63c8307c5,
+      type: 3}
+  - _OutlineTex: {fileID: 2800000, guid: b23676ff9cac20a4c9c7b9333f055f1b, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
