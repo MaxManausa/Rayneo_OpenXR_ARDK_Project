@@ -2,14 +2,18 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Hi_Torus_Hex_00
   m_Shader: {fileID: 4800000, guid: 22dc785c1bdd83f4abc47c99629605db, type: 3}
-  m_ShaderKeywords: _DIRECTIONCHANGE_ON _EMISSION _STRETCHING_ON
+  m_ValidKeywords:
+  - _DIRECTIONCHANGE_ON
+  m_InvalidKeywords:
+  - _EMISSION
+  - _STRETCHING_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -99,12 +103,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Activate_Target: 0
     - _Activate_Target_2: 0
     - _Activate_Target_3: 0
     - _Activate_Target_4: 1
-    - _Animation_speed: 0.5
+    - _Animation_speed: 0.35
     - _BackFace_Intensity: 1
     - _BumpScale: 1
     - _ColorBoost: 25

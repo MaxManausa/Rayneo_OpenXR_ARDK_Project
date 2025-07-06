@@ -464,7 +464,7 @@ RectTransform:
   m_GameObject: {fileID: 278616797}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
+  m_LocalScale: {x: 0.028234614, y: 0.015, z: 0.015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1951670851}
@@ -1672,7 +1672,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Close
+  m_Text: Quit App
 --- !u!222 &1228959488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Music: On'
+  m_Text: 'Music: Off'
 --- !u!222 &1291784847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2348,8 +2348,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951670850}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.035, y: 0.035, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.09999822}
+  m_LocalScale: {x: 0.018594198, y: 0.035, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 278616802}
@@ -2357,8 +2357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.9}
-  m_SizeDelta: {x: 268, y: 252}
+  m_AnchoredPosition: {x: 0, y: 0.8999984}
+  m_SizeDelta: {x: 490, y: 252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951670852
 MonoBehaviour:
@@ -2407,10 +2407,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Max's RayNeo Art Gallery V1\n----------------------------\nBrowse different
-    RayNeo 3D\nmodels and some of Max's \npersonal favorites.\n\nThere are some issues
-    with\nthe menus, so sometimes you\nmight need to go back and \nforth with it.
-    Also, be patient \nwith the 6DOF."
+  m_Text: "Max's RayNeo Art Gallery V1\n----------------------------------------------------------------------\nBrowse
+    different RayNeo 3D models and \nsome of Max's personal favorites.\n\nThere are
+    some issues with the menus, \nso sometimes you might need to quit the\napp and
+    restart it. \n\nAlso, be patient with the 6DOF. It takes a second.\nEnjoy! -
+    Metaverse Max"
 --- !u!222 &1951670854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2635,7 +2636,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SFX: On'
+  m_Text: 'SFX: Off'
 --- !u!222 &2079567956
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2731,6 +2732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuEarth
       objectReference: {fileID: 0}
+    - target: {fileID: 4230888151649010826, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4230888151656141976, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2817,6 +2822,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230888151656141977, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888151722408318, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888151722408318, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152087727401, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152087727401, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152203464394, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152203464394, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152895675676, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230888152895675676, guid: 55b1b2906b41c844ca274cfb38af7043, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
