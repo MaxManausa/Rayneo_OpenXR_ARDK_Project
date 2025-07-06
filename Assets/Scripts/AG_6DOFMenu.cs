@@ -8,6 +8,7 @@ public class AG_6DOFMenu : MonoBehaviour
 {
     public GameObject menuText;
     public GameObject objectCounterText;
+    public GameObject tapToShowMenuText;
 
     public LatticeButton button1;
     public LatticeButton button2;
@@ -73,6 +74,10 @@ public class AG_6DOFMenu : MonoBehaviour
             objectCounterText.SetActive(false);
             hideMenuEnabled = true;
             button5.GetComponentInChildren<Text>().text = "Show Menu";
+            Vector3 currentLocalPos = button5.transform.localPosition;
+            currentLocalPos.z = -30000f;
+            button5.transform.localPosition = currentLocalPos;
+            tapToShowMenuText.SetActive(true);
         }
         else
         {
@@ -84,6 +89,10 @@ public class AG_6DOFMenu : MonoBehaviour
             objectCounterText.SetActive(true);
             hideMenuEnabled = false;
             button5.GetComponentInChildren<Text>().text = "Hide Menu";
+            Vector3 currentLocalPos = button5.transform.localPosition;
+            currentLocalPos.z = 0f;
+            button5.transform.localPosition = currentLocalPos;
+            tapToShowMenuText.SetActive(false);
         }
 
     }
