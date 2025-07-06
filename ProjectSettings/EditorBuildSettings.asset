@@ -11,12 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MaxSlam.unity
     guid: d213d639c358d2542af0db24b9224458
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WhaleLattice.unity
     guid: 318ce7c10fa10a643953d86bc236d471
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WhaleSlam.unity
     guid: d760846966aec8e46800bcdd7b2fb812
+  - enabled: 1
+    path: Assets/Scenes/AG_Lattice_RayNeoGallery.unity
+    guid: 529e052ad9f693c468d045169831cb48
+  - enabled: 1
+    path: Assets/Scenes/AG_Slam_RayNeoGallery.unity
+    guid: 28f02289fe9ed5d45b7e40166c9d755e
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0db4e53b5281ac6478ed27e3d6050f86, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 604758a10068001438998e318258fa09, type: 2}
